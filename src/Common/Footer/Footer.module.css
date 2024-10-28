@@ -1,0 +1,44 @@
+.footer{
+  color: rgb(226, 214, 214);
+  background-color: #212121;
+  padding: 12px 14px 14px 10px;
+}
+
+.footer_main{
+  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_company h3, .footer_legal h3, .footer_social h3{
+  margin: 8px 0px;
+}
+
+.footer_company ul li,.footer_legal ul li,.footer_social ul li {
+  margin-bottom: 8px;
+}
+
+.footer_company ul li:hover, .footer_legal ul li:hover,.footer_social ul li:hover{
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.footer_social ul li input {
+  margin-top: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.footer_social ul li button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 6px;
+  background-color: rgb(220, 28, 28);
+  color :white
+}
+
+.footer_social ul li button:hover{
+  background-color: rgb(132, 45, 45);
+}
