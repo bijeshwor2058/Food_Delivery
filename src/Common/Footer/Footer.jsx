@@ -72,9 +72,7 @@ const Footer = () => {
       <hr />
 
       <div>
-        <h3 style={{ textAlign: "center",
-          marginTop:'10px'
-         }}>
+        <h3 style={{ textAlign: "center", marginTop: "10px" }}>
           <b>All rights reserved FoodCart</b>
         </h3>
       </div>

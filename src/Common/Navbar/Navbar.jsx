@@ -1,6 +1,6 @@
-import React from 'react'
-import style from './Navbar.module.css'
-import { Link } from 'react-router-dom'
+import React from "react";
+import style from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,18 +12,33 @@ const Navbar = () => {
 
       <div>
         <ul className={style.menu_bar}>
-        <Link to={'/'}><li>Home</li></Link>
-        <Link to={'/reviews'}><li>Reviews</li></Link>
-        <Link to={'/cart'}><li>Cart</li></Link> 
+          <Link to={"/"}>
+            <li>Home</li>
+          </Link>
+          <Link to={"/reviews"}>
+            <li>Reviews</li>
+          </Link>
+          <Link to={"/cart"}>
+            <li>Cart</li>
+          </Link>
         </ul>
       </div>
 
       <div className={style.right_menu_bar}>
-        <button className={style.signupBtn} id='signupBtn'>Sign up</button>
-        <button className={style.signupBtn} id='LoginBtn'>Log in</button>
+        <Link to={'/signup'} >
+          <button className={style.signupBtn} id="signupBtn">
+            Sign up
+          </button>
+        </Link >
+
+        <Link  to={'/login'} >
+          <button className={style.signupBtn} id="LoginBtn">
+            Log in
+          </button>
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
